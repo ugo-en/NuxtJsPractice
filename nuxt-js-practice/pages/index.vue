@@ -8,9 +8,13 @@
   </div>
 </template>
 
+  
 <script setup>
-
+  definePageMeta({
+      layout: "default-layout",
+  })
 </script>
+  
 
 <style scoped>
 h2{

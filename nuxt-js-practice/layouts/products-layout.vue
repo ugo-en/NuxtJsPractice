@@ -1,9 +1,9 @@
 <template>
     <div>
-      <header>
-        <nav>
+      <header class="shadow-sm bg-white mb-4">
+        <nav class="container mx-auto p-4 flex justify-between">
           <ul>
-            <NuxtLink to="/">Merch</NuxtLink>
+            <NuxtLink to="/products" class="font-bold">Merch</NuxtLink>
           </ul>
         </nav>
       </header>
@@ -14,8 +14,8 @@
     </div>
 
     <footer>
-        <nav>
-            <ul>
+        <nav class="container mx-auto p-4 flex justify-between">
+            <ul class="flex gap-4">
             <li>
                 <NuxtLink to="/">Home</NuxtLink>
             </li>

@@ -6,11 +6,15 @@
       <br>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore saepe recusandae vitae magnam impedit quibusdam at veniam dolores quisquam, vel sit beatae, tempora, nihil tenetur inventore pariatur neque consectetur dignissimos?</p>
     </div>
-  </template>
+</template>
   
-  <script setup>
   
-  </script>
+<script setup>
+definePageMeta({
+    layout: "default-layout",
+})
+</script>
+
   
   <style scoped>
   h2{

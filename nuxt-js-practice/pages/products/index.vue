@@ -1,10 +1,10 @@
 <template>
     <div>
-      <h2>Products - Detail</h2>
-      <br>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore saepe recusandae vitae magnam impedit quibusdam at veniam dolores quisquam, vel sit beatae, tempora, nihil tenetur inventore pariatur neque consectetur dignissimos?</p>
-      <br>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore saepe recusandae vitae magnam impedit quibusdam at veniam dolores quisquam, vel sit beatae, tempora, nihil tenetur inventore pariatur neque consectetur dignissimos?</p>
+      <div class="grid grid-cols-4 gap-5">
+        <div v-for="p in products">
+          <ProductCard :product="p" />
+        </div>
+      </div>
     </div>
   </template>
   
@@ -12,13 +12,16 @@
   definePageMeta({
       layout: "products-layout",
   })
+
+  // fetch products
+  const { data: products } = await useFetch("https://fakestoreapi.com/products")
 </script>
   
-  <style scoped>
+<style scoped>
   h2{
       color: green;
   }
   p {
       word-wrap: break-word;
   }
-  </style>
+</style>
